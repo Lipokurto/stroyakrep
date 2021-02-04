@@ -12,6 +12,7 @@
 }
 .cont-link {
   grid-area: n;
+  text-align: top;
   text-align: center;
 }
 .calc {
@@ -21,4 +22,9 @@
 .hed {
   grid-area: h;
   height: 150px;
+}
+
+.btn-side {
+  height: 50px;
+  width: 250px;
 }

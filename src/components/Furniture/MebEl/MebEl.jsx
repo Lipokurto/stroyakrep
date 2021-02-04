@@ -1,6 +1,5 @@
 import './MebEl.css'
 function MebEl(props) {
-    debugger
  return (
     <div className='item'>
         <div className='title-name'>{props.name}</div>
