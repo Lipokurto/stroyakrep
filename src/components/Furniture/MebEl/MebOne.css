@@ -1,0 +1,64 @@
+.one-container {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    grid-template-rows: 50px 80px auto;
+    grid-template-areas: 
+    'a a'
+    'c i'
+    'u i'
+    'u i'
+    ;
+    border-style: solid;
+    border-radius: 10px;
+    height: auto;
+    width: 1150px;
+}
+.het {
+    padding:10px;
+    font-size: 20px;
+    grid-area: a;
+    background-color:  aqua;
+}
+.con-img {
+    border-style: solid;
+    border-radius: 5px;
+    text-align: left;
+    grid-area: i;
+}
+.container {
+    text-align: center;
+    padding:10px;
+    grid-area: c;
+    height: 200px;
+}
+.cutcont {
+    padding:10px;
+    grid-area: u;
+    text-align: center;
+    font-size: 20px;
+}
+
+.con-one,.con-res {
+    text-align: center;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.cutnamefull {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cut-tit-full,.cut-res-full {
+    text-align: center;
+    border-style: groove;
+    border-radius: 5px;
+}
+.cut-tit-pice,.cut-res-pice {
+    text-align: center;
+    border-style: groove;
+    border-radius: 5px;
+}
+.cutCount {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,26 @@
+.item {
+    border-style: solid;
+    border-radius: 10px;
+}
+.title-name {
+    text-size-adjust: 25px;
+    background-color: aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cont {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'a b';
+}
+.name-tit,.result-tit {
+    padding:5px;
+    border-color: lightblue;
+    border-style: groove;
+    border-radius: 5px;
+    justify-content: center;
+}

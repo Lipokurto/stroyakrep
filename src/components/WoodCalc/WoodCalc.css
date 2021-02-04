@@ -1,0 +1,40 @@
+.calc-container {
+    text-align: center;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+}
+.calc-container-ras {
+    text-align: center;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.input {
+    text-align: center;
+    height: 12px;
+    width: 220px;
+    
+}
+.button{
+    width: 228px;
+}
+.woodRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'a b';
+    width: auto;
+    
+}
+.woodPice, .woodPrice {
+    border-radius: 5px;
+    border: solid;
+    border-style: groove;
+    
+    /* justify-content: center; */
+}
+.row-container {
+    text-align: center;
+}
