@@ -3,7 +3,7 @@ const Header =()=> {
     return (
         <div className='container-hed'>
             <div className='header-title'>
-                Калькулятор строяка
+                LarpInfo: Калькулятор строяка
             </div>
             <div className='header-title2'>
                 <div className='itm'>
