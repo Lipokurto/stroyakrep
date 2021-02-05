@@ -4,8 +4,6 @@ import {useSelector,useDispatch} from 'react-redux'
 import {updatePrice} from '../../actions'
 
 function WoodCalc(props) {
-
-  // const priceKub = useSelector(state =>state.counter.calc.price)
   let priceWood = useSelector(state =>state.counter.calc.sizePrice)
   let woodSizeReady = useSelector(state=>state.counter.calc.woodSize)
   let priceWoodElements = priceWood.map((el,index)=>

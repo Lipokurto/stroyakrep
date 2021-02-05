@@ -3,14 +3,16 @@
     background-color:rgb(111, 125, 255);
     border-bottom: rgb(111, 125, 255) solid;
     display: flex;
-
 }
-.header-title {
+.header-title-lrInf, .header-title-calc {
     font-size: 50px;
     color: white;
     font-weight: bold;
-    margin-left: 15px;
 }
+.menu-bar {
+    display: none;
+}
+
 .header-title2 {
 text-align: right;
 width: auto;
@@ -24,8 +26,17 @@ color: white;
     border-style: solid;
     border-radius: 50px;
     border-color: white;
+
 }
 .logo:hover {
     transition: 0.5s;
     transform: scale(1.1);
+}
+@media screen and (max-width:800px) {
+    .header-title-calc {
+        display: none;
+    }
+    .container-hed {
+justify-content: center;
+    }
 }

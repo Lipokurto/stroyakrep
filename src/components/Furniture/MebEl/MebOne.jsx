@@ -4,7 +4,7 @@ const MebOne =(props)=> {
     return (
      <div className='one-container'>
             <div className='het'>{props.name}</div>
-            <img  classname='con-img' alt='' width='800' height='520' src={props.img}></img>
+            <img  classname='con-img' alt=''  src={props.img}></img>
             <div className='container'>
                 <div className='row-one'>
                     <div className='con-one'>Цена за 1 шт</div>

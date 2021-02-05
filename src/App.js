@@ -1,4 +1,5 @@
 import React from 'react'
+import './Media.css'
 import './App.css';
 import WoodCalc from './components/WoodCalc/WoodCalc';
 import DefenseAlbum from './components/Defense/DefenseAlbum'
@@ -7,6 +8,7 @@ import Header from './components/Header/Header';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import Camp from './components/Camp/CampAlbum';
 import About from './components/About';
+
 
 
 function App() {
