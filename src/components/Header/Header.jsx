@@ -1,7 +1,9 @@
 import './Header.css'
+import logoWhite from '../../img/work/logoWhite.png'
 const Header =()=> {
     return (
         <div className='container-hed'>
+            <img src={logoWhite} alt='' className='logo'/>
             <div className='header-title'>
                 LarpInfo: Калькулятор строяка
             </div>

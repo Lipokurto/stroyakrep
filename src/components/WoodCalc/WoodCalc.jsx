@@ -13,14 +13,19 @@ function WoodCalc(props) {
   
   const dispatch = useDispatch()
     let newNumEl = React.createRef()
-  
   return (
     <div className="calc-container">
       <div className="calc-container-ras">
         <h1>Калькулятор</h1>
         <input type='text' placeHolder='Введите стоимость куба леса' className='input' ref={newNumEl}></input>
         <button className='button' onClick={()=>
-            dispatch(updatePrice(newNumEl.current.value))
+          {
+            if (isNaN(newNumEl.current.value)){
+            alert('Введено неверное значение')
+            } else if ((newNumEl.current.value).length <= 10) {
+              dispatch(updatePrice(newNumEl.current.value))
+            } else {alert('Введите число меньше 10 знаков')}
+          }
           }>Рассчитать</button>
           </div>
         <div className='row-container'>

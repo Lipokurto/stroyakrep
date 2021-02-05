@@ -9,10 +9,23 @@
     font-size: 50px;
     color: white;
     font-weight: bold;
+    margin-left: 15px;
 }
 .header-title2 {
 text-align: right;
 width: auto;
 margin-left: auto;
 color: white;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-top: 8px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: white;
+}
+.logo:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
 }
