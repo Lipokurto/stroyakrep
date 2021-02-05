@@ -1,14 +1,17 @@
 .item {
     border-style: solid;
     border-radius: 10px;
+    border-color:rgb(111, 125, 255);
 }
 .title-name {
     text-size-adjust: 25px;
-    background-color: aqua;
+    background-color: rgb(111, 125, 255);
+    color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-weight: bold;
 }
 .cont {
     display: grid;
@@ -21,6 +24,6 @@
     padding:5px;
     border-color: lightblue;
     border-style: groove;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content: center;
 }

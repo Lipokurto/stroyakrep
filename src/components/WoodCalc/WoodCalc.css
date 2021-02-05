@@ -2,23 +2,48 @@
     text-align: center;
     padding: 10px;
     border-style: solid;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: rgb(111, 125, 255);
+    border-right: none;
+    border-left: none;
+    border-top: none;
 }
 .calc-container-ras {
     text-align: center;
     padding: 10px;
     border-style: solid;
     border-radius: 10px;
+    border-color:rgb(111, 125, 255);
+    background-color: rgb(161, 168, 235);;
 }
-
-.input {
+.input::placeholder {
+    color: white;
+    font-size: 15px;
+    opacity: 60%;
+}
+.input{
     text-align: center;
-    height: 12px;
+    height: 50px;
     width: 220px;
-    
+    font-size: 20px;
+    background-color: rgb(111, 125, 255);
+    color: white;
+    font-weight: bold;
+}
+.input:hover {
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 10px blue;
 }
 .button{
     width: 228px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(255, 230, 0);
+}
+.button:hover {
+    transition: 0.5s;
+    transform: scale(1.05) ;
 }
 .woodRow {
     display: grid;
@@ -33,7 +58,7 @@
     border: solid;
     border-style: groove;
     
-    /* justify-content: center; */
+    
 }
 .row-container {
     text-align: center;

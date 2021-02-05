@@ -1,8 +1,18 @@
 .container-hed {
     padding:5px;
-    background-color:burlywood;
-    border-bottom: black solid;
+    background-color:rgb(111, 125, 255);
+    border-bottom: rgb(111, 125, 255) solid;
+    display: flex;
+
 }
 .header-title {
     font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.header-title2 {
+text-align: right;
+width: auto;
+margin-left: auto;
+color: white;
 }

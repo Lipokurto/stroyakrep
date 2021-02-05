@@ -6,6 +6,8 @@ import FunrnitureAlbum from './components/Furniture/FurnitureAlbum';
 import Header from './components/Header/Header';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import Camp from './components/Camp/CampAlbum';
+import About from './components/About';
+
 
 function App() {
   
@@ -22,6 +24,9 @@ function App() {
         <Route path='/camp' render={()=> 
           <div className='main'><Camp /></div> 
         }/>
+        <Route path='/about' render={()=> 
+          <div className='main'><About /></div> 
+        }/>
         <div className='calc'>
           <WoodCalc /> 
           <div className='cont-link'>
@@ -33,6 +38,9 @@ function App() {
           </NavLink>
           <NavLink to='/camp'>
             <button className='btn-side'>Лагерь</button>
+          </NavLink>
+          <NavLink to='/about'>
+            <button className='btn-side'>О сайте</button>
           </NavLink>
           </div>
         </div>

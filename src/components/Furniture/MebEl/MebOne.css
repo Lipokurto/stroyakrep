@@ -1,6 +1,6 @@
 .one-container {
     display: grid;
-    grid-template-columns: 310px 1fr;
+    grid-template-columns: 350px 1fr;
     grid-template-rows: 50px 80px auto;
     grid-template-areas: 
     'a a'
@@ -9,15 +9,20 @@
     'u i'
     ;
     border-style: solid;
-    border-radius: 10px;
-    height: auto;
-    width: 1150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    border-color:rgb(111, 125, 255);
+    height: 600px;
+    width: 1200px;
 }
 .het {
     padding:10px;
     font-size: 20px;
     grid-area: a;
-    background-color:  aqua;
+    background-color: rgb(111, 125, 255);
+    color: white;
+    font-weight: bold;
 }
 .con-img {
     border-style: solid;
@@ -29,19 +34,24 @@
     text-align: center;
     padding:10px;
     grid-area: c;
-    height: 200px;
 }
 .cutcont {
     padding:10px;
     grid-area: u;
     text-align: center;
-    font-size: 20px;
 }
 
 .con-one,.con-res {
     text-align: center;
     border-style: groove;
     border-radius: 5px;
+    width: 104px;
+}
+.tit-hed {
+    font-weight: bold;
+}
+.con-one {
+    font-weight: bold;
 }
 
 .cutnamefull {

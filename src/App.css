@@ -5,6 +5,7 @@
   "h h "
   "c m "
   "n m ";
+  
 }
 
 .main {
@@ -14,17 +15,34 @@
   grid-area: n;
   text-align: top;
   text-align: center;
+  /* border-right: solid rgb(111, 125, 255); */
+
 }
 .calc {
   grid-area: c;
+  
 }
 
 .hed {
   grid-area: h;
-  height: 150px;
+  height: auto;
+
 }
 
 .btn-side {
   height: 50px;
-  width: 250px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: rgb(111, 125, 255);
+  border-right: none;
+  border-left: none;
+  outline: none;
+
+}
+.btn-side:hover {
+  transition: 0.5s;
+  background-color: rgb(111, 125, 255);
+  color: white;
 }
