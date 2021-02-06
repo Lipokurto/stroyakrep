@@ -36,6 +36,9 @@ color: white;
     .header-title-calc {
         display: none;
     }
+    .header-title2 {
+        display: none;
+    }
     .container-hed {
 justify-content: center;
     }
