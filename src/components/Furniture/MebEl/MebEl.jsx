@@ -14,7 +14,7 @@ function MebEl(props) {
         </div>
         <div className='cont'>
             <div className='name-tit'>Экономия</div>
-            <div className='result-tit'>{(props.woodPrice*4  - props.woodPriceOptimum).toFixed(2)}</div>
+            <div className='result-tit'>{(props.woodPrice*props.stuffCount  - props.woodPriceOptimum).toFixed(2)}</div>
         </div>
     </div>
  )

@@ -49,8 +49,8 @@ function FurnitureAlbum() {
                     name='Стол 2000*600*750'
                     img={table_type_b}
                     woodPrice={priceWood[1]*2 + priceWood[0] + priceWood[2]} 
-                    woodPriceOptimum={priceWood[1]*8 + priceWood[0]*4 + priceWood[2]*2}
-                    stuffCount={6}
+                    woodPriceOptimum={priceWood[1]*4 + priceWood[0]*3 + priceWood[2]*2}
+                    stuffCount={3}
 
                     woodPice00={sizeWood[1]} woodCount00={2}
                     woodPice01={sizeWood[0]} woodCount01={1}
@@ -125,8 +125,8 @@ function FurnitureAlbum() {
                                 name='Стол 2000*600*750'
                                 img={table_type_b}
                                 woodPrice={priceWood[1]*2 + priceWood[0] + priceWood[2]} 
-                                woodPriceOptimum={priceWood[1]*8 + priceWood[0]*4 + priceWood[2]*2}
-                                stuffCount={6}
+                                woodPriceOptimum={priceWood[1]*4 + priceWood[0]*3 + priceWood[2]*2}
+                                stuffCount={3}
                                 />
                     </NavLink>
                     <NavLink  className='link' to='/furniture/id=3'>

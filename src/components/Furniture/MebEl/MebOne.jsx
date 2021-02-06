@@ -15,8 +15,9 @@ const MebOne =(props)=> {
                     <div className='con-res'>{props.woodPriceOptimum.toFixed(2)}</div>
                 </div>
                 <div className='row-one'>
+                
                     <div className='con-one'>Экономия</div>
-                    <div className='con-res'>{(props.woodPrice*4  - props.woodPriceOptimum).toFixed(2)}</div>
+                    <div className='con-res'>{(props.woodPrice*props.stuffCount - props.woodPriceOptimum).toFixed(2)}</div>
                 </div>
             </div>
             <div className='cutcont'>
@@ -76,8 +77,8 @@ const MebOne =(props)=> {
                         } 
                 </div>
                 <br></br>
-                <div>
-                    <div className='tit-hed'>Остатки:</div>
+                <div>{props.woodCutRest00== null ? null :
+                    <div className='tit-hed'>Остатки:</div> }
                         {props.woodCutRestCount00 == null ? null :
                         <div className='cutCount'>
                             <div className='cut-tit-pice'>{props.woodCutRest00}</div>
