@@ -1,5 +1,4 @@
 import React from 'react'
-import './Media.css'
 import './App.css';
 import WoodCalc from './components/WoodCalc/WoodCalc';
 import DefenseAlbum from './components/Defense/DefenseAlbum'

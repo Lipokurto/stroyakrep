@@ -1,6 +1,5 @@
 import './Header.css'
 import logoWhite from '../../img/work/logoWhite.png'
-import '../../Media.css'
 
 const Header =()=> {
     return (

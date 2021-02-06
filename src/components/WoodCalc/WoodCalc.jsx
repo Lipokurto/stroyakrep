@@ -22,7 +22,10 @@ function WoodCalc(props) {
             alert('Введено неверное значение')
             } else if ((newNumEl.current.value).length <= 10) {
               dispatch(updatePrice(newNumEl.current.value))
-            } else {alert('Введите число меньше 10 знаков')}
+              dispatch(updatePrice(newNumEl.current.value))
+            } else {
+              alert('Введите число меньше 10 знаков')
+            }
           }
           }>Рассчитать</button>
           </div>
