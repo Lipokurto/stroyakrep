@@ -16,6 +16,9 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <div className='hed'><Header /></div>
+        <Route exact path="/">
+          <About />
+        </Route>
         <Route path='/furniture' render={()=> 
           <div className='main'><FunrnitureAlbum /></div> 
         }/>

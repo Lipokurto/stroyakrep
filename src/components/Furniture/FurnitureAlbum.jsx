@@ -101,8 +101,6 @@ function FurnitureAlbum() {
                     woodCut04={sizeWood[2].split('*')[1] + '*' +sizeWood[2].split('*')[1]+'*500'}
                     woodCutCount04={2}
 
-                    // woodCutRest00={sizeWood[1].split('*')[0] + '*' +sizeWood[1].split('*')[1]+'*4000'}
-                    // woodCutRestCount00={1}
                     woodCutRest00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1500'}
                     woodCutRestCount00={1}
                     woodCutRest01={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*3500'}

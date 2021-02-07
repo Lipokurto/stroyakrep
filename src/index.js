@@ -10,7 +10,6 @@ const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && win
 
 ReactDOM.render(
   <Provider store={store}>
-    {console.log(store)}
     <React.StrictMode>
       <App />
     </React.StrictMode>
