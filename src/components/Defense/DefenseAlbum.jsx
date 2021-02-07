@@ -40,7 +40,7 @@ const Defense =()=> {
                         name='Стена 2000*2000*1000'
                         img={wall_type_b}
                         woodPrice={priceWood[0]*2 + priceWood[2]} 
-                        woodPriceOptimum={priceWood[0]*4 + priceWood[2]*6}
+                        woodPriceOptimum={priceWood[0]*4 + priceWood[2]*3}
                         stuffCount={3}
     
                         woodPice00={sizeWood[0]} woodCount00={2}
@@ -78,7 +78,7 @@ const Defense =()=> {
                                     name='Стена 2000*2000*1000'
                                     img={wall_type_b}
                                     woodPrice={priceWood[0]*2 + priceWood[2]} 
-                                    woodPriceOptimum={priceWood[0]*4 + priceWood[2]*6}
+                                    woodPriceOptimum={priceWood[0]*4 + priceWood[2]*3}
                                     stuffCount={3}
                                     />
                         </NavLink>
