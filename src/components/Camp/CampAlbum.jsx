@@ -1,12 +1,16 @@
 import './CampAlbum.css'
+import { useSelector } from 'react-redux'
+import { BrowserRouter, NavLink, Route } from 'react-router-dom'
+
 import torch_type_a from '../../img/camp/torch_type_a.png'
 import straite_type_b from '../../img/camp/straite_type_b.png'
 import dosp_type_c from '../../img/camp/dosp_type_c.png'
+import Kostravishe20002000450 from '../../img/camp/Kostravishe20002000450.gif'
+import orujstoyka200020001000 from '../../img/camp/orujstoyka200020001000.gif'
+import dospehsoyka200010001000 from '../../img/camp/dospehsoyka200010001000.gif'
 
 import MebOne from '../Furniture/MebEl/MebOne'
 import MebEl from '../Furniture/MebEl/MebEl'
-import { useSelector } from 'react-redux'
-import { BrowserRouter, NavLink, Route } from 'react-router-dom'
 
 const Camp =()=> {
         let priceWood = useSelector(state =>state.counter.calc.sizePrice)
@@ -17,11 +21,12 @@ const Camp =()=> {
                 <Route path='/camp/id=1' render={() => 
                     <MebOne 
                         id='1'
-                        name='Кастровище 2000*2000*450'
+                        name='Костровище 2000*2000*450'
                         img={torch_type_a}
                         woodPrice={priceWood[1]*4 + priceWood[2]} 
                         woodPriceOptimum={priceWood[1]*4 + priceWood[2]}
                         stuffCount={1}
+                        codeQR={Kostravishe20002000450}
     
                         woodPice00={sizeWood[1]} woodCount00={4}
                         woodPice01={sizeWood[2]} woodCount01={1}
@@ -43,6 +48,7 @@ const Camp =()=> {
                         woodPrice={priceWood[0]*3} 
                         woodPriceOptimum={priceWood[0]*3}
                         stuffCount={1}
+                        codeQR={orujstoyka200020001000}
     
                         woodPice00={sizeWood[0]} woodCount00={3}
     
@@ -60,6 +66,7 @@ const Camp =()=> {
                         woodPrice={priceWood[0] + priceWood[2]} 
                         woodPriceOptimum={priceWood[0] + priceWood[2]}
                         stuffCount={1}
+                        codeQR={dospehsoyka200010001000}
     
                         woodPice00={sizeWood[0]} woodCount00={1}
                         woodPice01={sizeWood[2]} woodCount01={1}

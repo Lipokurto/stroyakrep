@@ -1,10 +1,15 @@
 import './DefenseAlbum.css'
-import yoz_type_a from '../../img/def/yoz_type_a.png'
-import wall_type_b from '../../img/def/wall_type_b.png'
-import MebOne from '../Furniture/MebEl/MebOne'
-import MebEl from '../Furniture/MebEl/MebEl'
 import { useSelector } from 'react-redux'
 import { BrowserRouter, NavLink, Route } from 'react-router-dom'
+
+import yoz_type_a from '../../img/def/yoz_type_a.png'
+import wall_type_b from '../../img/def/wall_type_b.png'
+import stena200020001000 from '../../img/def/stena200020001000.gif'
+import ej200015001500 from '../../img/def/ej200015001500.gif'
+
+
+import MebOne from '../Furniture/MebEl/MebOne'
+import MebEl from '../Furniture/MebEl/MebEl'
 
 const Defense =()=> {
         let priceWood = useSelector(state =>state.counter.calc.sizePrice)
@@ -20,6 +25,7 @@ const Defense =()=> {
                         woodPrice={priceWood[4] + priceWood[2]*2} 
                         woodPriceOptimum={priceWood[4] + priceWood[2]*6}
                         stuffCount={3}
+                        codeQR={ej200015001500}
     
                         woodPice00={sizeWood[4]} woodCount00={1}
                         woodPice01={sizeWood[2]} woodCount01={2}
@@ -42,6 +48,7 @@ const Defense =()=> {
                         woodPrice={priceWood[0]*2 + priceWood[2]} 
                         woodPriceOptimum={priceWood[0]*4 + priceWood[2]*3}
                         stuffCount={3}
+                        codeQR={stena200020001000}
     
                         woodPice00={sizeWood[0]} woodCount00={2}
                         woodPice01={sizeWood[2]} woodCount01={1}

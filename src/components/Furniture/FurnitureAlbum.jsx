@@ -1,10 +1,16 @@
 import { useSelector } from 'react-redux'
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import './FurnitureAlbum.css'
+
 import table_type_b from '../../img/furn/table_type_b.png'
 import bench_type_a from '../../img/furn/bench_typ_a.png'
 import table_type_c from '../../img/furn/table_type_c.png'
 import taburet_Type_d from '../../img/furn/taburet_Type_d.png'
+
+import skameyka1500200500 from '../../img/furn/Skameyka1500200500.gif'
+import stol2000600750 from '../../img/furn/stol2000600750.gif'
+import stol1500600750 from '../../img/furn/stol1500600750.gif'
+import taburet525600600 from '../../img/furn/taburet525600600.gif'
 
 import MebEl from './MebEl/MebEl'
 import MebOne from './MebEl/MebOne'
@@ -23,6 +29,7 @@ function FurnitureAlbum() {
                     woodPrice={priceWood[0] + priceWood[2]} 
                     woodPriceOptimum={priceWood[0]*4 + priceWood[2]}
                     stuffCount={4}
+                    codeQR={skameyka1500200500}
 
                     woodPice00={sizeWood[0]} woodCount00={1}
                     woodPice01={sizeWood[2]} woodCount01={1}
@@ -53,6 +60,7 @@ function FurnitureAlbum() {
                     woodPrice={priceWood[1]*2 + priceWood[0] + priceWood[2]} 
                     woodPriceOptimum={priceWood[1]*4 + priceWood[0]*3 + priceWood[2]*2}
                     stuffCount={3}
+                    codeQR={stol2000600750}
 
                     woodPice00={sizeWood[1]} woodCount00={2}
                     woodPice01={sizeWood[0]} woodCount01={1}
@@ -85,6 +93,7 @@ function FurnitureAlbum() {
                     woodPrice={priceWood[1]*1 + priceWood[0] + priceWood[2]} 
                     woodPriceOptimum={priceWood[1]*4 + priceWood[0]*3 + priceWood[2]*2}
                     stuffCount={3}
+                    codeQR={stol1500600750}
 
                     woodPice00={sizeWood[1]} woodCount00={1}
                     woodPice01={sizeWood[0]} woodCount01={1}
@@ -115,6 +124,7 @@ function FurnitureAlbum() {
                     woodPrice={priceWood[0] + priceWood[2]} 
                     woodPriceOptimum={priceWood[0] + priceWood[2]}
                     stuffCount={1}
+                    codeQR={taburet525600600}
 
                     woodPice00={sizeWood[0]} woodCount00={1}
                     woodPice01={sizeWood[2]} woodCount01={1}
