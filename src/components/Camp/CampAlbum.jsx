@@ -62,7 +62,7 @@ const Camp =()=> {
                         stuffCount={1}
     
                         woodPice00={sizeWood[0]} woodCount00={1}
-                        woodPice01={sizeWood[2]} woodCount00={1}
+                        woodPice01={sizeWood[2]} woodCount01={1}
     
                         woodCut00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1000'}
                         woodCutCount00={5}

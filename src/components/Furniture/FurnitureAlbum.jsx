@@ -4,6 +4,8 @@ import './FurnitureAlbum.css'
 import table_type_b from '../../img/furn/table_type_b.png'
 import bench_type_a from '../../img/furn/bench_typ_a.png'
 import table_type_c from '../../img/furn/table_type_c.png'
+import taburet_Type_d from '../../img/furn/taburet_Type_d.png'
+
 import MebEl from './MebEl/MebEl'
 import MebOne from './MebEl/MebOne'
 
@@ -107,6 +109,29 @@ function FurnitureAlbum() {
                     woodCutRestCount01={1}
                 />
                 }/>
+            <Route path='/furniture/id=4' render={() => 
+                <MebOne 
+                    id='4'
+                    name='Табурет 525*600*600'
+                    img={taburet_Type_d}
+                    woodPrice={priceWood[0] + priceWood[2]} 
+                    woodPriceOptimum={priceWood[0] + priceWood[2]}
+                    stuffCount={1}
+
+                    woodPice00={sizeWood[0]} woodCount00={1}
+                    woodPice01={sizeWood[2]} woodCount01={1}
+                    
+                    woodCut00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*500'}
+                    woodCutCount00={4}
+                    woodCut01={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*600'}
+                    woodCutCount01={6}
+                    woodCut02={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*500'}
+                    woodCutCount02={12}
+
+                    woodCutRest00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*400'}
+                    woodCutRestCount00={1}
+                />
+                }/>
 
 
                 <div className='container'>
@@ -136,6 +161,15 @@ function FurnitureAlbum() {
                                 woodPrice={priceWood[1] + priceWood[0] + priceWood[2]} 
                                 woodPriceOptimum={priceWood[1]*4 + priceWood[0]*4 + priceWood[2]*2}
                                 stuffCount={4}
+                                />
+                    </NavLink>
+                    <NavLink  className='link' to='/furniture/id=4'>
+                        <MebEl 
+                                name='Табурет 525*600*600'
+                                img={taburet_Type_d}
+                                woodPrice={priceWood[0] + priceWood[2]} 
+                                woodPriceOptimum={priceWood[0] + priceWood[2]}
+                                stuffCount={1}
                                 />
                     </NavLink>
                 </div>
