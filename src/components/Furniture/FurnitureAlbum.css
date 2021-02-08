@@ -18,5 +18,6 @@ transform: rotate(2deg) scale(1.1) ;
     .container {
         border-radius: 10px;
         display: grid;
+        
     }
   }
