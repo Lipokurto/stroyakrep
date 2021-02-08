@@ -1,7 +1,7 @@
 .one-container {
     display: grid;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: 50px 80px auto 10px;
+    grid-template-rows: 50px 80px 550px 10px;
     grid-template-areas: 
     'a a'
     'c i'
@@ -12,7 +12,7 @@
     border-style: solid;
     border-bottom-right-radius: 10px;
     border-color:rgb(111, 125, 255);
-    height: 600px;
+    height: auto;
     width: 1200px;
 }
 .btn-qr {

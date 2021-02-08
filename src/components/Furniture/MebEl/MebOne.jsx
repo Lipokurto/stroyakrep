@@ -84,6 +84,42 @@ class MebOne extends Component {
                                     <div className='cut-res-pice'>{this.props.woodCutCount04}</div>
                                 </div>
                                 } 
+                                {this.props.woodCutCount05 == null ? null :
+                                <div className='cutCount'>
+                                    <div className='cut-tit-pice'>{this.props.woodCut05}</div>
+                                    <div className='cut-res-pice'>{this.props.woodCutCount05}</div>
+                                </div>
+                                } 
+                                {this.props.woodCutCount06 == null ? null :
+                                <div className='cutCount'>
+                                    <div className='cut-tit-pice'>{this.props.woodCut06}</div>
+                                    <div className='cut-res-pice'>{this.props.woodCutCount06}</div>
+                                </div>
+                                } 
+                                {this.props.woodCutCount07 == null ? null :
+                                <div className='cutCount'>
+                                    <div className='cut-tit-pice'>{this.props.woodCut07}</div>
+                                    <div className='cut-res-pice'>{this.props.woodCutCount07}</div>
+                                </div>
+                                } 
+                                {this.props.woodCutCount08 == null ? null :
+                                <div className='cutCount'>
+                                    <div className='cut-tit-pice'>{this.props.woodCut08}</div>
+                                    <div className='cut-res-pice'>{this.props.woodCutCount08}</div>
+                                </div>
+                                } 
+                                {this.props.woodCutCount09 == null ? null :
+                                <div className='cutCount'>
+                                    <div className='cut-tit-pice'>{this.props.woodCut09}</div>
+                                    <div className='cut-res-pice'>{this.props.woodCutCount09}</div>
+                                </div>
+                                } 
+                                {this.props.woodCutCount10 == null ? null :
+                                <div className='cutCount'>
+                                    <div className='cut-tit-pice'>{this.props.woodCut10}</div>
+                                    <div className='cut-res-pice'>{this.props.woodCutCount10}</div>
+                                </div>
+                                } 
                         </div>
                         <br></br>
                         <div>{this.props.woodCutRest00== null ? null :

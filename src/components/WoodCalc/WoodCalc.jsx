@@ -14,7 +14,7 @@ function WoodCalc(props) {
   return (
     <div className="calc-container">
       <div className="calc-container-ras">
-        <h4>Ведите стоимость куба леса</h4>
+        <h4>Введите стоимость куба леса</h4>
         <input type='text' placeHolder='Введите стоимость куба леса' className='input' ref={newNumEl}></input>
         <button className='button' onClick={()=>
           {

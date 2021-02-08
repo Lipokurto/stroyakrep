@@ -142,6 +142,7 @@ function FurnitureAlbum() {
                 }/>
 
 
+
                 <div className='container'>
                     <NavLink  className='link' to='/furniture/id=1'>
                         <MebEl className='item-link'
@@ -180,6 +181,7 @@ function FurnitureAlbum() {
                                 stuffCount={1}
                                 />
                     </NavLink>
+
                 </div>
     </BrowserRouter>
     )
