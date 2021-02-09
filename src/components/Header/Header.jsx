@@ -1,5 +1,7 @@
 import './Header.css'
 import logoWhite from '../../img/work/logoWhite.png'
+// import MartCon from './Mart/MartCon'
+import MartEl from './Mart/MartEl/MartEl'
 
 const Header =()=> {
     return (
@@ -9,18 +11,10 @@ const Header =()=> {
             </div>
             <img src={logoWhite} alt='' className='logo'/>
             <div className='header-title-calc'>
-                Калькулятор строяка
+                Строяк
             </div>
             <div className='header-title2'>
-                <div className='itm'>
-                    Все размеры указаны в мм
-                </div>
-                <div className='itm'>
-                    Цена куба дерева все что тебе нужно для рассчета строяка
-                </div>
-                <div className='itm'>
-                    Цены полученные в ходе вычелсений имеют приблизительный характер
-                </div>
+                <MartEl />
             </div>
         </div>
     )

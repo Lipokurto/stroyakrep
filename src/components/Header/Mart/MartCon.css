@@ -1,0 +1,59 @@
+.contCount {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'b0 p k'
+    'b1 p k'
+    'b2 p k';
+
+}
+.btnpl0 {
+    grid-area: b0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.btnpl1 {
+    grid-area: b1;
+}
+.btnpl2 {
+    grid-area: b2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.btnpl0,.btnpl1,.btnpl2 {
+    width: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+.btnpl0,.btnpl2 {
+    background-color: rgb(161, 168, 235);
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.rezpl {
+    grid-area: p;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dob {
+    grid-area: k;
+    margin-right: 10px;
+    outline: none;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+.dob:hover {
+    transition: 0.5s;
+    transform: scale(1.05) ;
+    box-shadow: inset -5px 0 10px rgb(161, 168, 235);
+    box-shadow:  10px 0 10px rgb(161, 168, 235);
+}

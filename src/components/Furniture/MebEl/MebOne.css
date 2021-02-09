@@ -1,10 +1,11 @@
 .one-container {
     display: grid;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: 50px 80px 550px 10px;
+    grid-template-rows: 50px 70px 80px 550px 10px;
     grid-template-areas: 
     'a a'
     'c i'
+    't i'
     'u i'
     'u i'
     'b b'
@@ -15,6 +16,12 @@
     height: auto;
     width: 1200px;
 }
+.containercount {
+    grid-area: t;
+    text-align: center;
+
+}
+
 .btn-qr {
     grid-area: b;
     height: 30px;
@@ -96,10 +103,11 @@
     .one-container {
         display: grid;
         grid-template-columns: 350px;
-        grid-template-rows: 50px 80px auto 200px;
+        grid-template-rows: 50px 100px auto 200px;
         grid-template-areas: 
         'a'
         'c'
+        't'
         'u'
         'u'
         'i'

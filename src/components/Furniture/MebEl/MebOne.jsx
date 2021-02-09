@@ -1,5 +1,6 @@
 import { React,Component } from 'react'
 import './MebOne.css'
+import MartCon from '../../Header/Mart/MartCon'
 
 class MebOne extends Component {
     constructor(props) {
@@ -7,8 +8,8 @@ class MebOne extends Component {
         this.state={
             isShowQR:false
         }
+        
     }
-
     render() {
     return (
         <div>
@@ -29,6 +30,11 @@ class MebOne extends Component {
                             <div className='con-res'>{(this.props.woodPrice*this.props.stuffCount - this.props.woodPriceOptimum).toFixed(2)}</div>
                         </div>
                     </div>
+
+                    <div className='containercount'>
+                        <MartCon resultMart={this.props.woodPrice.toFixed(2)} name={this.props.name}/>
+                    </div>
+
                     <div className='cutcont'>
                         <div>
                             <div className='tit-hed'>Доски на 1 шт:</div>
