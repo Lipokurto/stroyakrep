@@ -1,0 +1,30 @@
+.contrRow {
+    margin-top: 10px;
+    display: grid;
+    width: 800px;
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.75fr;
+    grid-template-areas: 
+    'a b c d';
+}
+
+.contrRow div {
+    border:solid;
+    border-color:rgb(161, 168, 235);
+    border-style: groove;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+} 
+.resultLog {
+    border: solid;
+    width: 796px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(111, 125, 255);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

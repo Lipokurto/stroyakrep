@@ -1,7 +1,5 @@
 let initinalState = {
-    result: [
-        {name:'',count:0,sum:0}
-    ]
+    result: []
 }
 const resultReducer =(state=initinalState,action)=> {
     switch (action.type) {
@@ -11,7 +9,6 @@ const resultReducer =(state=initinalState,action)=> {
                 result:[...state.result,action.payload]
             }
         }
- 
         default:
             return state;
     }

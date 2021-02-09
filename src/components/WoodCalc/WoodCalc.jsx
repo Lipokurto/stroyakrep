@@ -7,7 +7,9 @@ function WoodCalc(props) {
   let priceWood = useSelector(state =>state.counter.calc.sizePrice)
   let woodSizeReady = useSelector(state=>state.counter.calc.woodSize)
   let priceWoodElements = priceWood.map((el,index)=>
-    <div className='woodRow'><div className='woodPice'>{woodSizeReady[index]}</div> <div className='woodPrice'>{el.toFixed(2)}</div></div>)
+    <div className='woodRow'>
+      <div className='woodPice'>{woodSizeReady[index]}</div> 
+      <div className='woodPrice'>{el.toFixed(2)}</div></div>)
   
   const dispatch = useDispatch()
     let newNumEl = React.createRef()

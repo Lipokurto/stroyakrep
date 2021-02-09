@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import Camp from './components/Camp/CampAlbum';
 import About from './components/About';
+import MartOne from './components/Header/Mart/MartEl/MartOne';
 
 
 
@@ -19,6 +20,9 @@ function App() {
         <Route exact path="/">
           <About />
         </Route>
+        <Route path='/checklist' render={()=> 
+          <div className='main'><MartOne /></div> 
+        }/>
         <Route path='/furniture' render={()=> 
           <div className='main'><FunrnitureAlbum /></div> 
         }/>
@@ -34,6 +38,9 @@ function App() {
         <div className='calc'>
           <WoodCalc /> 
           <div className='cont-link'>
+          <NavLink to='/checklist'>
+            <button className='btn-side'>Чек-лист</button>
+          </NavLink>
           <NavLink to='/furniture'>
             <button className='btn-side'>Мебель</button>
           </NavLink>
