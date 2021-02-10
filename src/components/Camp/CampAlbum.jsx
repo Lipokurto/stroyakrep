@@ -8,12 +8,14 @@ import straite_type_b from '../../img/camp/straite_type_b.png'
 import dosp_type_c from '../../img/camp/dosp_type_c.png'
 import Tualet10007502000 from '../../img/camp/Tualet10007502000.png'
 import stolb7507502000 from '../../img/camp/stolb7507502000.png'
+import musor750500500 from '../../img/camp/musor750500500.png'
 
 import Kostravishe20002000450 from '../../img/camp/Kostravishe20002000450.gif'
 import orujstoyka200020001000 from '../../img/camp/orujstoyka200020001000.gif'
 import dospehsoyka200010001000 from '../../img/camp/dospehsoyka200010001000.gif'
 import Tualet10007502000qr from '../../img/camp/Tualet10007502000.gif'
 import stolb7507502000qr from '../../img/camp/stolb7507502000.gif'
+import musor750500500qr from '../../img/camp/musorka750500500qr.gif'
 
 import MebOne from '../Furniture/MebEl/MebOne'
 import MebEl from '../Furniture/MebEl/MebEl'
@@ -151,10 +153,27 @@ const Camp =()=> {
                         woodCutCount01={4}
                     />
                     }/>
+                <Route path='/camp/id=6' render={() => 
+                    <MebOne 
+                        id='6'
+                        name='Мусорка 750*500*500'
+                        img={musor750500500}
+                        woodPrice={priceWood[0]} 
+                        woodPriceOptimum={priceWood[0]}
+                        stuffCount={1}
+                        codeQR={musor750500500qr}
+    
+                        woodPice00={sizeWood[1]} woodCount00={1}
+    
+                        woodCut00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*750'}
+                        woodCutCount00={1}
+                        woodCut01={sizeWood[0].split('*')[0] + '*' +sizeWood[2].split('*')[0]+'*500'}
+                        woodCutCount01={1}
+                    />
+                    }/>
                     <div className='container'>
                         <NavLink  className='link' to='/camp/id=1' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
-                                    id='1'
                                     name='Костровище 2000*2000*450'
                                     img={torch_type_a}
                                     woodPrice={priceWood[1]*4 + priceWood[2]} 
@@ -164,7 +183,6 @@ const Camp =()=> {
                         </NavLink>
                         <NavLink  className='link' to='/camp/id=2' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
-                                    id='2'
                                     name='Оружейная стойка 2000*2000*1000'
                                     img={straite_type_b}
                                     woodPrice={priceWood[0]*3} 
@@ -174,7 +192,6 @@ const Camp =()=> {
                         </NavLink>
                         <NavLink  className='link' to='/camp/id=3' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
-                                    id='3'
                                     name='Доспешная стойка 2000*1000*1000'
                                     img={dosp_type_c}
                                     woodPrice={priceWood[0] + priceWood[2]} 
@@ -184,7 +201,6 @@ const Camp =()=> {
                         </NavLink>
                         <NavLink  className='link' to='/camp/id=4' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
-                                id='4'
                                 name='Туалет 1000*750*2000'
                                 img={Tualet10007502000}
                                 woodPrice={priceWood[0] + priceWood[1] + priceWood[2]*2} 
@@ -194,11 +210,19 @@ const Camp =()=> {
                         </NavLink>
                         <NavLink  className='link' to='/camp/id=5' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
-                                id='5'
                                 name='Столб 750*750*2000'
                                 img={stolb7507502000}
                                 woodPrice={priceWood[2]} 
                                 woodPriceOptimum={priceWood[2]}
+                                stuffCount={1}
+                                />
+                        </NavLink>
+                        <NavLink  className='link' to='/camp/id=6' onClick={()=>dispatch(removeCount())}>
+                        <MebEl 
+                                name='Мусорка 750*500*500'
+                                img={musor750500500}
+                                woodPrice={priceWood[1]} 
+                                woodPriceOptimum={priceWood[1]}
                                 stuffCount={1}
                                 />
                         </NavLink>
