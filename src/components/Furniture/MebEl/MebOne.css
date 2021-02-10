@@ -11,10 +11,10 @@
     'b b'
     ;
     border-style: solid;
-    border-bottom-right-radius: 10px;
+    
     border-color:rgb(111, 125, 255);
     height: auto;
-    width: 1200px;
+    width: 1297px;
 }
 .containercount {
     grid-area: t;

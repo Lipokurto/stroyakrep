@@ -28,3 +28,12 @@
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
+@media screen and (max-width:800px) {
+    .contrRow {
+        width: 350px;
+    }
+    .resultLog {
+        width: 350px;
+    }
+}

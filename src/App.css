@@ -6,6 +6,11 @@
   "h h "
   "c m "
   "n m ";
+  border-style: solid;
+  border-color: rgb(111, 125, 255);;
+  width: 1600px;
+  margin-left: 7.5%;
+  height: auto;
 }
 
 .main {
@@ -50,5 +55,7 @@
   }
   .app {
     grid-template-rows: 0.25fr 2fr 10fr;
+    width: 355px;
+
   }
 }

@@ -11,7 +11,9 @@ const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && win
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      <div className='mainContainer'>
+        <App />
+      </div>
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')

@@ -37,9 +37,13 @@ color: white;
         display: none;
     }
     .header-title2 {
+        text-align: right;
+    }
+    .header-title-lrInf {
         display: none;
     }
     .container-hed {
-justify-content: center;
+        justify-content: center;
+
     }
 }
