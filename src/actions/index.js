@@ -22,3 +22,8 @@ export const saveResultItem =(namex,countx,sumx)=> {
         payload:{name:namex,count:countx,sum:sumx}
     }
 }
+export const eraseResults =()=> {
+    return {
+        type:'ERASE_RESULTS'
+    }
+}

@@ -11,7 +11,7 @@ const MartCon =(props)=> {
         <div className='contCount'>
             <button className='btnpl0' onClick={()=>
                 price!==0?dispatch(putInMartItem()):null
-            }></button>
+            }>+</button>
             <div className='btnpl1' >{cont}</div>
             <button className='btnpl2' onClick={()=>
                 cont !== 0 ? dispatch(putOutMartItem()):null

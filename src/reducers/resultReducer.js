@@ -9,6 +9,12 @@ const resultReducer =(state=initinalState,action)=> {
                 result:[...state.result,action.payload]
             }
         }
+        case 'ERASE_RESULTS': {
+            return {
+                result:[]
+            }
+        }
+
         default:
             return state;
     }

@@ -1,4 +1,26 @@
 .resultMain {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-areas: 
+    'x1 x2'
+    ;
     font-size: 30px;
     font-weight: bold;
+}
+.itemRez01 {
+    grid-area: x1;
+    margin-top: 5px;
+}
+.itemRez02 button{
+    grid-area: x2;
+    outline: none;
+    border-radius: 20px;
+    height: 50px;
+    background-color: rgb(111, 125, 255);
+    border-color: white;
+    border-style: solid;
+    font-weight: bold;
+    color: white;
+    
 }
