@@ -29,7 +29,7 @@ const MartOne =(props)=> {
         </div>
             {resultElements}
         <div className='resultLog'>
-            {resSum}
+            {resSum.toFixed(2)}
         </div>
         </div>
     )
