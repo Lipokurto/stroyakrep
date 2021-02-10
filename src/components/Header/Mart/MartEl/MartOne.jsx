@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux'
+import {  useSelector } from 'react-redux'
 import './MartOne.css'
 
 const MartOne =(props)=> {
@@ -21,16 +21,16 @@ const MartOne =(props)=> {
     
     return (
         <div>
-        <div className='contrRow'>
-            <div classname='item01'>№</div>
-            <div classname='item02'>Название</div>
-            <div classname='item03'>Количество</div>
-            <div classname='item04'>Сумма</div>
-        </div>
-            {resultElements}
-        <div className='resultLog'>
-            {resSum.toFixed(2)}
-        </div>
+            <div className='contrRow'>
+                <div classname='item01'>№</div>
+                <div classname='item02'>Название</div>
+                <div classname='item03'>Количество</div>
+                <div classname='item04'>Сумма</div>
+            </div>
+                {resultElements}
+            <div className='resultLog'>
+                {resSum.toFixed(2)}
+            </div>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import './DefenseAlbum.css'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { BrowserRouter, NavLink, Route } from 'react-router-dom'
+import {removeCount} from '../../actions'
 
 import yoz_type_a from '../../img/def/yoz_type_a.png'
 import wall_type_b from '../../img/def/wall_type_b.png'
@@ -14,7 +15,7 @@ import MebEl from '../Furniture/MebEl/MebEl'
 const Defense =()=> {
         let priceWood = useSelector(state =>state.counter.calc.sizePrice)
         let sizeWood = useSelector(state =>state.counter.calc.woodSize)
-    
+        const dispatch = useDispatch()
         return (
             <BrowserRouter>
                 <Route path='/defense/id=1' render={() => 
@@ -69,7 +70,7 @@ const Defense =()=> {
                     }/>
     
                     <div className='container'>
-                        <NavLink  className='link' to='/defense/id=1'>
+                        <NavLink  className='link' to='/defense/id=1' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
                                     id='1'
                                     name='Еж тяжелый 2000*1500*1500'
@@ -79,7 +80,7 @@ const Defense =()=> {
                                     stuffCount={3}
                                     />
                         </NavLink>
-                        <NavLink  className='link' to='/defense/id=2'>
+                        <NavLink  className='link' to='/defense/id=2' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
                                     id='2'
                                     name='Стена 2000*2000*1000'

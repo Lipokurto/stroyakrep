@@ -1,6 +1,7 @@
 import './CampAlbum.css'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { BrowserRouter, NavLink, Route } from 'react-router-dom'
+import {removeCount} from '../../actions'
 
 import torch_type_a from '../../img/camp/torch_type_a.png'
 import straite_type_b from '../../img/camp/straite_type_b.png'
@@ -20,6 +21,7 @@ import MebEl from '../Furniture/MebEl/MebEl'
 const Camp =()=> {
         let priceWood = useSelector(state =>state.counter.calc.sizePrice)
         let sizeWood = useSelector(state =>state.counter.calc.woodSize)
+        const dispatch = useDispatch()
     
         return (
             <BrowserRouter>
@@ -150,7 +152,7 @@ const Camp =()=> {
                     />
                     }/>
                     <div className='container'>
-                        <NavLink  className='link' to='/camp/id=1'>
+                        <NavLink  className='link' to='/camp/id=1' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
                                     id='1'
                                     name='Костровище 2000*2000*450'
@@ -160,7 +162,7 @@ const Camp =()=> {
                                     stuffCount={1}
                                     />
                         </NavLink>
-                        <NavLink  className='link' to='/camp/id=2'>
+                        <NavLink  className='link' to='/camp/id=2' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
                                     id='2'
                                     name='Оружейная стойка 2000*2000*1000'
@@ -170,7 +172,7 @@ const Camp =()=> {
                                     stuffCount={1}
                                     />
                         </NavLink>
-                        <NavLink  className='link' to='/camp/id=3'>
+                        <NavLink  className='link' to='/camp/id=3' onClick={()=>dispatch(removeCount())}>
                             <MebEl className='item-link'
                                     id='3'
                                     name='Доспешная стойка 2000*1000*1000'
@@ -180,7 +182,7 @@ const Camp =()=> {
                                     stuffCount={1}
                                     />
                         </NavLink>
-                        <NavLink  className='link' to='/camp/id=4'>
+                        <NavLink  className='link' to='/camp/id=4' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
                                 id='4'
                                 name='Туалет 1000*750*2000'
@@ -190,7 +192,7 @@ const Camp =()=> {
                                 stuffCount={1}
                                 />
                         </NavLink>
-                        <NavLink  className='link' to='/camp/id=5'>
+                        <NavLink  className='link' to='/camp/id=5' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
                                 id='5'
                                 name='Столб 750*750*2000'

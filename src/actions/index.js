@@ -27,3 +27,8 @@ export const eraseResults =()=> {
         type:'ERASE_RESULTS'
     }
 }
+export const removeCount =()=> {
+    return {
+        type:'REMOVE_COUNT'
+    }
+}

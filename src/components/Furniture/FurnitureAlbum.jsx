@@ -1,4 +1,5 @@
-import { useSelector } from 'react-redux'
+import {removeCount}  from '../../actions'
+import { useDispatch, useSelector } from 'react-redux'
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import './FurnitureAlbum.css'
 
@@ -18,6 +19,7 @@ import MebOne from './MebEl/MebOne'
 function FurnitureAlbum() {
     let priceWood = useSelector(state =>state.counter.calc.sizePrice)
     let sizeWood = useSelector(state =>state.counter.calc.woodSize)
+    const dispatch = useDispatch()
 
     return (
         <BrowserRouter>
@@ -142,19 +144,18 @@ function FurnitureAlbum() {
                 }/>
 
 
-
                 <div className='container'>
-                    <NavLink  className='link' to='/furniture/id=1'>
+                    <NavLink  className='link' to='/furniture/id=1' onClick={()=>dispatch(removeCount())}>
                         <MebEl className='item-link'
-                                id='2'
                                 name='Скамейка 1500*200*500'
                                 img={bench_type_a}
                                 woodPrice={priceWood[0] + priceWood[2]} 
                                 woodPriceOptimum={priceWood[0]*4 + priceWood[2]}
                                 stuffCount={4}
+
                                 />
                     </NavLink>
-                    <NavLink  className='link' to='/furniture/id=2'>
+                    <NavLink  className='link' to='/furniture/id=2' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
                                 name='Стол 2000*600*750'
                                 img={table_type_b}
@@ -163,7 +164,7 @@ function FurnitureAlbum() {
                                 stuffCount={3}
                                 />
                     </NavLink>
-                    <NavLink  className='link' to='/furniture/id=3'>
+                    <NavLink  className='link' to='/furniture/id=3' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
                                 name='Стол 1500*600*750'
                                 img={table_type_c}
@@ -172,7 +173,7 @@ function FurnitureAlbum() {
                                 stuffCount={4}
                                 />
                     </NavLink>
-                    <NavLink  className='link' to='/furniture/id=4'>
+                    <NavLink  className='link' to='/furniture/id=4' onClick={()=>dispatch(removeCount())}>
                         <MebEl 
                                 name='Табурет 525*600*600'
                                 img={taburet_Type_d}
