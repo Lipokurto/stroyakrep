@@ -5,8 +5,11 @@ import {removeCount} from '../../actions'
 
 import yoz_type_a from '../../img/def/yoz_type_a.png'
 import wall_type_b from '../../img/def/wall_type_b.png'
+import vorotaImg from '../../img/def/vorota300025002000.png'
+
 import stena200020001000 from '../../img/def/stena200020001000.gif'
 import ej200015001500 from '../../img/def/ej200015001500.gif'
+import vorota250030002000 from '../../img/def/VorotaGif.gif'
 
 
 import MebOne from '../Furniture/MebEl/MebOne'
@@ -36,7 +39,7 @@ const Defense =()=> {
                         woodCut01={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*1500'}
                         woodCutCount01={8}
     
-                        woodCutRest00={sizeWood[4].split('*')[1] + '*' +sizeWood[4].split('*')[1]+'*4000'}
+                        woodCutRest00={sizeWood[4].split('*')[0] + '*' +sizeWood[4].split('*')[1]+'*4000'}
                         woodCutRestCount00={1}
     
                     />
@@ -63,8 +66,50 @@ const Defense =()=> {
                         woodCut03={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*1000'}
                         woodCutCount03={2}
     
-                        woodCutRest00={sizeWood[0].split('*')[1] + '*' +sizeWood[0].split('*')[1]+'*4000'}
+                        woodCutRest00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*4000'}
                         woodCutRestCount00={1}
+    
+                    />
+                    }/>
+                <Route path='/defense/id=3' render={() => 
+                    <MebOne 
+                        id='3'
+                        name='Ворота 3000*2500*2000'
+                        img={vorotaImg}
+                        woodPrice={priceWood[3]*2 + priceWood[0]*7 + priceWood[2]*2} 
+                        woodPriceOptimum={priceWood[3]*2 + priceWood[0]*7 + priceWood[2]*2}
+                        stuffCount={1}
+                        codeQR={vorota250030002000}
+    
+                        woodPice00={sizeWood[0]} woodCount00={7}
+                        woodPice01={sizeWood[2]} woodCount01={2}
+                        woodPice02={sizeWood[3]} woodCount02={2}
+    
+                        woodCut00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1000'}
+                        woodCutCount00={2}
+                        woodCut01={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1500'}
+                        woodCutCount01={8}
+                        woodCut02={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*2000'}
+                        woodCutCount02={4}
+                        woodCut03={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*2500'}
+                        woodCutCount03={4}
+                        woodCut04={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*2750'}
+                        woodCutCount04={2}
+                        woodCut05={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*2000'}
+                        woodCutCount05={4}
+                        woodCut06={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*1500'}
+                        woodCutCount06={2}
+                        woodCut07={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*5000'}
+                        woodCutCount07={1}
+                        woodCut08={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*3000'}
+                        woodCutCount08={2}
+                        woodCut09={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*500'}
+                        woodCutCount09={4}
+    
+                        woodCutRest00={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*1000'}
+                        woodCutRestCount00={1}
+                        woodCutRest01={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*500'}
+                        woodCutRestCount01={1}
     
                     />
                     }/>
@@ -88,6 +133,16 @@ const Defense =()=> {
                                     woodPrice={priceWood[0]*2 + priceWood[2]} 
                                     woodPriceOptimum={priceWood[0]*4 + priceWood[2]*3}
                                     stuffCount={3}
+                                    />
+                        </NavLink>
+                        <NavLink  className='link' to='/defense/id=3' onClick={()=>dispatch(removeCount())}>
+                            <MebEl className='item-link'
+                                    id='3'
+                                    name='Ворота 3000*2500*2000'
+                                    img={vorotaImg}
+                                    woodPrice={priceWood[3]*2 + priceWood[0]*7 + priceWood[2]*2} 
+                                    woodPriceOptimum={priceWood[3]*2 + priceWood[0]*7 + priceWood[2]*2}
+                                    stuffCount={1}
                                     />
                         </NavLink>
                     </div>
