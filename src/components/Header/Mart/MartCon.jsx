@@ -20,7 +20,23 @@ const MartCon =(props)=> {
                 {(props.resultMart*cont).toFixed(2)}
             </div>
             <button className='dob' onClick={()=> 
-            dispatch(saveResultItem(props.name,cont,(props.resultMart*cont).toFixed(2)))
+            dispatch(saveResultItem(
+                props.name,
+                cont,
+                (props.resultMart*cont).toFixed(2),
+
+                props.woodSizeProps00,
+                props.woodSizeProps01,
+                props.woodSizeProps02,
+                props.woodSizeProps03,
+                props.woodSizeProps04,
+
+                (props.woodSizeCount00*cont).toFixed(2),
+                (props.woodSizeCount01*cont).toFixed(2),
+                (props.woodSizeCount02*cont).toFixed(2),
+                (props.woodSizeCount03*cont).toFixed(2),
+                (props.woodSizeCount04*cont).toFixed(2)
+                ))
             }>Сохранить</button>
             
         </div>

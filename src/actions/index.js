@@ -16,10 +16,33 @@ export const putOutMartItem =(cont)=> {
         payload:cont
     }
 }
-export const saveResultItem =(namex,countx,sumx)=> {
+export const saveResultItem =(
+    namex,
+    countx,
+    sumx,
+
+    pice00,
+    pice01,
+    pice02,
+    pice03,
+    pice04,
+
+    picecont00,
+    picecont01,
+    picecont02,
+    picecont03,
+    picecont04,
+    )=> {
     return {
         type:'SAVE_RESULT_ITEM',
-        payload:{name:namex,count:countx,sum:sumx}
+        payload:{
+            name:namex,
+            count:countx,
+            sum:sumx,
+            pice:[pice00,pice01,pice02,pice03,pice04],
+            picecont:[picecont00,picecont01,picecont02,picecont03,picecont04]
+
+        }
     }
 }
 export const eraseResults =()=> {

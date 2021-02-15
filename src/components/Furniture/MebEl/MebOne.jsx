@@ -32,7 +32,22 @@ class MebOne extends Component {
                     </div>
 
                     <div className='containercount'>
-                        <MartCon resultMart={this.props.woodPrice.toFixed(2)} name={this.props.name}/>
+                        <MartCon 
+                            name={this.props.name}
+                            resultMart={this.props.woodPrice.toFixed(2)} 
+
+                            woodSizeProps00={this.props.woodPice00} 
+                            woodSizeProps01={this.props.woodPice01} 
+                            woodSizeProps02={this.props.woodPice02} 
+                            woodSizeProps03={this.props.woodPice03} 
+                            woodSizeProps04={this.props.woodPice04}
+
+                            woodSizeCount00={this.props.woodCount00}
+                            woodSizeCount01={this.props.woodCount01}
+                            woodSizeCount02={this.props.woodCount02}
+                            woodSizeCount03={this.props.woodCount03}
+                            woodSizeCount04={this.props.woodCount04}
+                            />
                     </div>
 
                     <div className='cutcont'>

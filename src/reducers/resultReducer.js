@@ -14,8 +14,6 @@ const resultReducer =(state=initinalState,action)=> {
                 result:[]
             }
         }
-        
-
         default:
             return state;
     }
