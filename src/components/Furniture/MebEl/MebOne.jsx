@@ -71,6 +71,12 @@ class MebOne extends Component {
                                 <div className='cut-res-full'>{this.props.woodCount02}</div>
                             </div>
                             }
+                            {this.props.woodCount03 == null ? null :
+                            <div className='cutnamefull'>
+                                <div className='cut-tit-full'>{this.props.woodPice03}</div>
+                                <div className='cut-res-full'>{this.props.woodCount03}</div>
+                            </div>
+                            }
                         </div>
                         <br></br>
                         <div>

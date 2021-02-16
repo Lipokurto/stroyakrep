@@ -6,10 +6,12 @@ import {removeCount} from '../../actions'
 import yoz_type_a from '../../img/def/yoz_type_a.png'
 import wall_type_b from '../../img/def/wall_type_b.png'
 import vorotaImg from '../../img/def/vorota300025002000.png'
+import towerImg from '../../img/def/tower500015002000.png'
 
 import stena200020001000 from '../../img/def/stena200020001000.gif'
 import ej200015001500 from '../../img/def/ej200015001500.gif'
 import vorota250030002000 from '../../img/def/VorotaGif.gif'
+import towerQr from '../../img/def/towerqr.gif'
 
 
 import MebOne from '../Furniture/MebEl/MebOne'
@@ -113,6 +115,45 @@ const Defense =()=> {
     
                     />
                     }/>
+                <Route path='/defense/id=4' render={() => 
+                    <MebOne 
+                        id='4'
+                        name='Башня 5000*1500*2000'
+                        img={towerImg}
+                        woodPrice={priceWood[1]*2 + priceWood[3]*5 + priceWood[2]*2 + priceWood[0]*2} 
+                        woodPriceOptimum={priceWood[1]*2 + priceWood[3]*5 + priceWood[2]*2 + priceWood[0]*2}
+                        stuffCount={1}
+                        codeQR={towerQr}
+    
+                        woodPice00={sizeWood[0]} woodCount00={2}
+                        woodPice01={sizeWood[1]} woodCount01={2}
+                        woodPice02={sizeWood[2]} woodCount02={2}
+                        woodPice03={sizeWood[3]} woodCount03={5}
+    
+                        woodCut00={sizeWood[1].split('*')[0] + '*' +sizeWood[1].split('*')[1]+'*3000'}
+                        woodCutCount00={4}
+                        woodCut01={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*5000'}
+                        woodCutCount01={4}
+                        woodCut02={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*1000'}
+                        woodCutCount02={4}
+                        woodCut03={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*1500'}
+                        woodCutCount03={4}
+                        woodCut04={sizeWood[2].split('*')[0] + '*' +sizeWood[2].split('*')[1]+'*1500'}
+                        woodCutCount04={8}
+                        woodCut05={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1750'}
+                        woodCutCount05={4}
+                        woodCut06={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1000'}
+                        woodCutCount06={1}
+                        woodCut07={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*1500'}
+                        woodCutCount07={1}
+    
+                        woodCutRest00={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*750'}
+                        woodCutRestCount00={1}
+                        woodCutRest01={sizeWood[0].split('*')[0] + '*' +sizeWood[0].split('*')[1]+'*250'}
+                        woodCutRestCount01={1}
+    
+                    />
+                    }/>
     
                     <div className='container'>
                         <NavLink  className='link' to='/defense/id=1' onClick={()=>dispatch(removeCount())}>
@@ -142,6 +183,15 @@ const Defense =()=> {
                                     img={vorotaImg}
                                     woodPrice={priceWood[3]*2 + priceWood[0]*7 + priceWood[2]*2} 
                                     woodPriceOptimum={priceWood[3]*2 + priceWood[0]*7 + priceWood[2]*2}
+                                    stuffCount={1}
+                                    />
+                        </NavLink>
+                        <NavLink  className='link' to='/defense/id=4' onClick={()=>dispatch(removeCount())}>
+                            <MebEl className='item-link'
+                                    name='Башня 5000*1500*2000'
+                                    img={towerImg}
+                                    woodPrice={priceWood[1]*2 + priceWood[3]*5 + priceWood[2]*2 + priceWood[0]*2} 
+                                    woodPriceOptimum={priceWood[1]*2 + priceWood[3]*5 + priceWood[2]*2 + priceWood[0]*2}
                                     stuffCount={1}
                                     />
                         </NavLink>
