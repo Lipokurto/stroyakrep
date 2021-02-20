@@ -1,7 +1,7 @@
 .contrRow {
     margin-top: 10px;
     display: grid;
-    width: 800px;
+    width: auto;
     grid-template-columns: 0.5fr 1fr 0.5fr 0.75fr;
     grid-template-areas: 
     'a b c d';
@@ -17,7 +17,7 @@
 } 
 .resultLog {
     border: solid;
-    width: 796px;
+    width: auto;
     justify-content: center;
     text-align: center;
     font-size: 30px;
@@ -27,13 +27,4 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-}
-
-@media screen and (max-width:800px) {
-    .contrRow {
-        width: 350px;
-    }
-    .resultLog {
-        width: 350px;
-    }
 }

@@ -13,11 +13,44 @@ transform: rotate(2deg) scale(1.1) ;
 .container {
     border-radius: 10px;
     display: flex;
+    margin-left: 0px;
 }
-@media screen and (max-width:800px) {
+
+@media screen and (max-width: 1366px) {
     .container {
         border-radius: 10px;
         display: grid;
-        
+        grid-template-columns: repeat(3, 1fr);
     }
-  }
+}
+@media screen and (max-width: 1280px) {
+    .container {
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        border-radius: 10px;
+        display: grid;
+        margin-left: 15%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 412px) {
+    .container {
+        border-radius: 10px;
+        display: grid;
+        margin-left: 7.5%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 360px) {
+    .container {
+        border-radius: 10px;
+        display: grid;
+        margin-left: 2%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

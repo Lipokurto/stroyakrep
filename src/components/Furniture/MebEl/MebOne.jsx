@@ -16,7 +16,7 @@ class MebOne extends Component {
             <div className='one-container'>
                     <div className='het'>{this.props.name}</div>
                     <img  classname='con-img' alt=''  src={this.props.img}></img>
-                    <div className='container'>
+                    <div className='containerc'>
                         <div className='row-one'>
                             <div className='con-one'>Цена за 1 шт</div>
                             <div className='con-res'>{this.props.woodPrice.toFixed(2)}</div>

@@ -92,9 +92,9 @@ function FurnitureAlbum() {
                     id='3'
                     name='Стол 1500*600*750'
                     img={table_type_c}
-                    woodPrice={priceWood[1]*1 + priceWood[0] + priceWood[2]} 
-                    woodPriceOptimum={priceWood[1]*4 + priceWood[0]*3 + priceWood[2]*2}
-                    stuffCount={3}
+                    woodPrice={priceWood[1] + priceWood[0] + priceWood[2]} 
+                    woodPriceOptimum={priceWood[1]*4 + priceWood[0]*4 + priceWood[2]*2}
+                    stuffCount={4}
                     codeQR={stol1500600750}
 
                     woodPice00={sizeWood[1]} woodCount00={1}
