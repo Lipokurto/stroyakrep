@@ -7,11 +7,13 @@ import table_type_b from '../../img/furn/table_type_b.png'
 import bench_type_a from '../../img/furn/bench_typ_a.png'
 import table_type_c from '../../img/furn/table_type_c.png'
 import taburet_Type_d from '../../img/furn/taburet_Type_d.png'
+import bed20001000500 from '../../img/furn/bed20001000500.png'
 
 import skameyka1500200500 from '../../img/furn/Skameyka1500200500.gif'
 import stol2000600750 from '../../img/furn/stol2000600750.gif'
 import stol1500600750 from '../../img/furn/stol1500600750.gif'
 import taburet525600600 from '../../img/furn/taburet525600600.gif'
+import bed20001000500qr from '../../img/furn/bed20001000500qr.gif'
 
 import MebEl from './MebEl/MebEl'
 import MebOne from './MebEl/MebOne'
@@ -142,6 +144,32 @@ function FurnitureAlbum() {
                     woodCutRestCount00={1}
                 />
                 }/>
+            <Route path='/furniture/id=5' render={() => 
+                <MebOne 
+                    id='5'
+                    name='Кровать 2000*1000*500'
+                    img={bed20001000500}
+                    woodPrice={priceWood[3] + priceWood[1]*2} 
+                    woodPriceOptimum={priceWood[3] + priceWood[1]*2}
+                    stuffCount={1}
+                    codeQR={bed20001000500qr}
+
+                    woodPice00={sizeWood[1]} woodCount00={2}
+                    woodPice01={sizeWood[3]} woodCount01={1}
+                    
+                    woodCut00={sizeWood[1].split('*')[0] + '*' +sizeWood[1].split('*')[1]+'*1000'}
+                    woodCutCount00={8}
+                    woodCut01={sizeWood[1].split('*')[0] + '*' +sizeWood[1].split('*')[1]+'*500'}
+                    woodCutCount01={8}
+                    woodCut02={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*2000'}
+                    woodCutCount02={2}
+                    woodCut03={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*900'}
+                    woodCutCount03={2}
+
+                    woodCutRest00={sizeWood[3].split('*')[0] + '*' +sizeWood[3].split('*')[1]+'*200'}
+                    woodCutRestCount00={1}
+                />
+                }/>
 
 
                 <div className='container'>
@@ -179,6 +207,15 @@ function FurnitureAlbum() {
                                 img={taburet_Type_d}
                                 woodPrice={priceWood[0] + priceWood[2]} 
                                 woodPriceOptimum={priceWood[0] + priceWood[2]}
+                                stuffCount={1}
+                                />
+                    </NavLink>
+                    <NavLink  className='link' to='/furniture/id=5' onClick={()=>dispatch(removeCount())}>
+                        <MebEl 
+                                name='Кровать 2000*1000*500'
+                                img={bed20001000500}
+                                woodPrice={priceWood[3] + priceWood[1]*2} 
+                                woodPriceOptimum={priceWood[3] + priceWood[1]*2}
                                 stuffCount={1}
                                 />
                     </NavLink>

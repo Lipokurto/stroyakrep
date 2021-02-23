@@ -8,6 +8,7 @@ import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import Camp from './components/Camp/CampAlbum';
 import About from './components/About';
 import MartOne from './components/Header/Mart/MartEl/MartOne';
+import Reference from './components/Reference/Reference'
 
 
 
@@ -35,6 +36,9 @@ function App() {
         <Route path='/about' render={()=> 
           <div className='main'><About /></div> 
         }/>
+        <Route path='/reference' render={()=> 
+          <div className='main'><Reference /></div> 
+        }/>
         <div className='calc'>
           <WoodCalc /> 
           <div className='cont-link'>
@@ -53,6 +57,9 @@ function App() {
           <NavLink to='/about'>
             <button className='btn-side'>О сайте</button>
           </NavLink>
+          {/* <NavLink to='/reference'>
+            <button className='btn-side'>Рекомендации</button>
+          </NavLink> */}
           </div>
         </div>
       </div> 

@@ -1,0 +1,66 @@
+.container-referance {
+    padding: 10px;
+}
+.Zagol-row {
+    text-size-adjust: 25px;
+    background-color: rgb(111, 125, 255);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-weight: bold;
+}
+.item-tool {
+    border: solid;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgb(111, 125, 255);
+    text-align: center;
+}
+.item-row img {
+    padding: 10px;
+    height: 250px
+}
+.contRez {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'a b';
+}
+.oper-item01,.oper-item02 {
+    padding:5px;
+    border-color: lightblue;
+    border-style: groove;
+    border-radius: 10px;
+    justify-content: center;
+}
+.avto-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    't1 t1'
+    'a1 b1';
+    border: solid;
+    width: 615px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgb(111, 125, 255);
+    padding: 10px;
+}
+.max-eff-title {
+    grid-area: t1;
+    border: solid;
+    width: 607px;
+    text-size-adjust: 25px;
+    background-color: rgb(111, 125, 255);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+   
+}
